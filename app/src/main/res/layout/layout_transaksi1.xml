@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nmPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/nama_pelanggan"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/altPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/alamat_pelanggan"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="@string/jenis_kelamin"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/JnsKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Pria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pria"
+
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/Wanita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wanita"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipe_pelanggan">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/TipePelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbGold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gold" />
+
+                <RadioButton
+                    android:id="@+id/rbSilver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/silver" />
+
+                <RadioButton
+                    android:id="@+id/rbBiasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/biasa" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang"/>
+
+            <RadioGroup
+                android:id="@+id/NamaBarang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nbAndroid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/android" />
+
+                <RadioButton
+                    android:id="@+id/nbIphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/iphone" />
+
+                <RadioButton
+                    android:id="@+id/nbWp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/windows_phone" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/jmlBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/jumlah_barang"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8F5C5C"
+            android:layout_marginRight="22dp"
+            android:onClick="prosesData"
+            android:text="@string/proses"/>
+
+        <Button
+            android:backgroundTint="#8F5C5C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+
+</LinearLayout>
